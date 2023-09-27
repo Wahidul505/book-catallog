@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/.84bcd7e9b2ac5c7fd62ffc7d2afbeed1f95db2ab-audit.json",
+    "files": [
+        {
+            "date": 1695832132647,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/phu-2023-27-09-22-error.log",
+            "hash": "b36f44410f4972b75db06ceb62dd59ff9496ee05307d6b425014dea77e05d7db"
+        },
+        {
+            "date": 1695837484869,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/phu-2023-27-09-23-error.log",
+            "hash": "2aa561ad7f2887e03778e034fe10dd8231888f71a75bee16ccbb88fa21edfbe5"
+        }
+    ],
+    "hashType": "sha256"
+}
