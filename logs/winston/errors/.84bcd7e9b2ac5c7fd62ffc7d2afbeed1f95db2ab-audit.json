@@ -14,6 +14,21 @@
             "date": 1695837484869,
             "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/phu-2023-27-09-23-error.log",
             "hash": "2aa561ad7f2887e03778e034fe10dd8231888f71a75bee16ccbb88fa21edfbe5"
+        },
+        {
+            "date": 1695837759560,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/phu-2023-28-09-00-error.log",
+            "hash": "30103ba1af96845bdd287e89bddc33433b4be4df7da56c9165648487941dd7b3"
+        },
+        {
+            "date": 1695841267047,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/phu-2023-28-09-01-error.log",
+            "hash": "08ed8957facac24e022ca17804807bda1ee9af0a3b300c7e82c2771ea36909d2"
+        },
+        {
+            "date": 1695874270100,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/phu-2023-28-09-10-error.log",
+            "hash": "6a8c8e78b2d5d7b1d3d0f187be7e6d15b3acc7f680a9061a0851dd11baa82d3a"
         }
     ],
     "hashType": "sha256"

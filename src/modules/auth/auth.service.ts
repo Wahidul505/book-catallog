@@ -6,6 +6,16 @@ import { jwtHelpers } from '../../helpers/jwtHelpers';
 import prisma from '../../shared/prisma';
 
 const signUp = async (payload: User): Promise<Partial<User>> => {
+  const isUserExist = await prisma.user.findFirst({
+    where: {
+      email: payload.email,
+    },
+  });
+
+  if (isUserExist) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'User already exists');
+  }
+
   const result = await prisma.user.create({
     data: payload,
   });
