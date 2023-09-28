@@ -43,6 +43,16 @@ const insertIntoDB = async (
   return result;
 };
 
+const getAllFromDB = async (): Promise<Order[]> => {
+  const result = await prisma.order.findMany({
+    include: {
+      orderedBooks: true,
+    },
+  });
+  return result;
+};
+
 export const OrderService = {
   insertIntoDB,
+  getAllFromDB,
 };
