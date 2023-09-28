@@ -34,6 +34,16 @@
             "date": 1695877460917,
             "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/successes/phu-2023-28-09-11-success.log",
             "hash": "87e3000a5c37d2d09f59279680210ab9c6c3bcccab4d402e45137cc5794e5a2a"
+        },
+        {
+            "date": 1695880821394,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/successes/phu-2023-28-09-12-success.log",
+            "hash": "90dfa1c2944e69c893c78ca0d16a53ba2dd4f086b92bf6eabd59f8eaa820d55a"
+        },
+        {
+            "date": 1695891937022,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/successes/phu-2023-28-09-15-success.log",
+            "hash": "fdc9c94b70d62c871ad3a696b28175bff941a27f5c27a3bc6294276f71e792c9"
         }
     ],
     "hashType": "sha256"

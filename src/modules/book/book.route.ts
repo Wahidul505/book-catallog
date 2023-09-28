@@ -18,6 +18,8 @@ router.get('/', BookController.getAllFromDB);
 
 router.get('/:id', BookController.getDataById);
 
+router.get('/:categoryId/category', BookController.getByCategory);
+
 router.patch(
   '/:id',
   auth(ENUM_USER_ROLE.ADMIN),
