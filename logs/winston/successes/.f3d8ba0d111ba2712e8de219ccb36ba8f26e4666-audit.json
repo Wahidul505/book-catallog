@@ -49,6 +49,11 @@
             "date": 1695914554231,
             "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/successes/phu-2023-28-09-21-success.log",
             "hash": "72fe469453ab18222f1e23a7c2d859932913e5e516250109cfb1fb6b5e391b3b"
+        },
+        {
+            "date": 1695916988151,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/successes/phu-2023-28-09-22-success.log",
+            "hash": "65ada89d02bda074410fb1f25c294f9c38d1d8138dd61264df5debede3f58dc7"
         }
     ],
     "hashType": "sha256"

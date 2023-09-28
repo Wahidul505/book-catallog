@@ -1,5 +1,7 @@
 import { Order } from '@prisma/client';
 import httpStatus from 'http-status';
+import { JwtPayload } from 'jsonwebtoken';
+import { ENUM_USER_ROLE } from '../../enums/user';
 import ApiError from '../../errors/ApiError';
 import prisma from '../../shared/prisma';
 import { IOrderedBooks } from './order.interface';
@@ -43,16 +45,61 @@ const insertIntoDB = async (
   return result;
 };
 
-const getAllFromDB = async (): Promise<Order[]> => {
-  const result = await prisma.order.findMany({
-    include: {
-      orderedBooks: true,
-    },
-  });
+const getAllFromDB = async (user: JwtPayload): Promise<Order[] | undefined> => {
+  let result;
+  if (user.role === ENUM_USER_ROLE.ADMIN) {
+    result = await prisma.order.findMany({
+      include: {
+        orderedBooks: true,
+      },
+    });
+  } else if (user.role === ENUM_USER_ROLE.CUSTOMER) {
+    result = await prisma.order.findMany({
+      where: {
+        userId: user.userId,
+      },
+      include: {
+        orderedBooks: true,
+      },
+    });
+  }
+  return result;
+};
+
+const getDataById = async (
+  user: JwtPayload,
+  id: string
+): Promise<Order | null | undefined> => {
+  let result;
+  if (user.role === ENUM_USER_ROLE.ADMIN) {
+    result = await prisma.order.findUnique({
+      where: {
+        id,
+      },
+      include: {
+        orderedBooks: true,
+      },
+    });
+  } else if (user.role === ENUM_USER_ROLE.CUSTOMER) {
+    result = await prisma.order.findFirst({
+      where: {
+        id,
+        userId: user.userId,
+      },
+      include: {
+        orderedBooks: true,
+      },
+    });
+
+    if (!result) {
+      throw new ApiError(httpStatus.UNAUTHORIZED, 'You are not authorized');
+    }
+  }
   return result;
 };
 
 export const OrderService = {
   insertIntoDB,
   getAllFromDB,
+  getDataById,
 };
