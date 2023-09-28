@@ -44,6 +44,11 @@
             "date": 1695891937031,
             "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/phu-2023-28-09-15-error.log",
             "hash": "c9e1788174254b38a8bc9746d9522759cd31f886ed42c7137fa86e20f9c8a186"
+        },
+        {
+            "date": 1695914554242,
+            "name": "/Users/macbookair/Documents/level-2/prisma/assignment/logs/winston/errors/phu-2023-28-09-21-error.log",
+            "hash": "fc94107f31943ff4ded4c2e6d02bd1f31c33d62c1ac4c56a089aee68c8f7f3ca"
         }
     ],
     "hashType": "sha256"
